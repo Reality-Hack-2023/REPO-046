@@ -35,14 +35,13 @@ public class ToggleObject : MonoBehaviour
 
                 return;
             }
-            else 
-            {
-                toggleObject.SetActive(false);
-            }
+          
+
 
         }
 
         
-
+        toggleObject.SetActive(false);
     }
+
 }

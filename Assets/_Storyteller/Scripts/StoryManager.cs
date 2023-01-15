@@ -21,21 +21,27 @@ public class StoryManager : MonoBehaviour
         if (timedLineData.Count == 0) 
         {
             string[] lines = storyFile.text.Split('\n');
-            for (int i = 0; i < lines.Length; i++) 
+            for (int i = 1; i < lines.Length; i++) 
             {
             timedLineData.Add(new TimedLines(i, lines[i]));
             }
+            StartStory();
         }
-    }
-
-    void OnEnable() {
-        if (timedLineData.Count > 0)
+        else 
         {
             StartStory();
         }
     }
+
+    // void OnEnable() {
+    //     if (timedLineData.Count > 0)
+    //     {
+    //         StartStory();
+    //     }
+    // }
     void StartStory() 
     {
+        Debug.Log("StartStory");
         foreach (TimedLines line in timedLineData) 
         {
             StartCoroutine(StartStoryObject(line));
@@ -52,7 +58,7 @@ public class StoryManager : MonoBehaviour
 [System.Serializable]
 public class TimedLines 
 {
-    public float waitTime = 0;
+    public float waitTime = 5;
     public string line = "";
 
     public TimedLines (float _waitTime, string _line) 
