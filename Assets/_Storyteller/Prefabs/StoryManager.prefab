@@ -44,7 +44,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 69fe26d5c1bd4944e8bc2b06a07feb2e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  storyFile: {fileID: 4900000, guid: ab9501d91f0f17a4d934a44b6870e3e4, type: 3}
+  storyFile: {fileID: 4900000, guid: 54292ead80f0cb84897c581ba48d6b28, type: 3}
+  storyLine: {fileID: 0}
   timedLineData:
   - waitTime: 0
     line: "Once upon a time, in a far-off land, there lived a young prince named
