@@ -1,0 +1,101 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1320191236920628753
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5486275290513632943}
+  - component: {fileID: 578374261653185272}
+  m_Layer: 0
+  m_Name: StoryManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5486275290513632943
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320191236920628753}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &578374261653185272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1320191236920628753}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 69fe26d5c1bd4944e8bc2b06a07feb2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  storyFile: {fileID: 4900000, guid: ab9501d91f0f17a4d934a44b6870e3e4, type: 3}
+  timedLineData:
+  - waitTime: 0
+    line: "Once upon a time, in a far-off land, there lived a young prince named
+      Aric. \r"
+  - waitTime: 1
+    line: "Aric was the only son of the king and queen, and was beloved by all in
+      the kingdom. \r"
+  - waitTime: 2
+    line: "He was brave, kind, and just, and had a heart full of adventure.\r"
+  - waitTime: 3
+    line: "One day, while out on a hunting trip, Aric stumbled upon a mysterious
+      cave deep in the forest. \r"
+  - waitTime: 4
+    line: "Being the curious soul he was, Aric decided to explore the cave, despite
+      the warnings of his companions.\r"
+  - waitTime: 5
+    line: "As he ventured deeper into the cave, he came across a beautiful and powerful
+      sorceress named Elara. \r"
+  - waitTime: 6
+    line: "She was the guardian of a magical artifact that had the power to grant
+      wishes. \r"
+  - waitTime: 7
+    line: "Elara warned Aric that the artifact was not to be used lightly, for it
+      could bring great harm as well as great good.\r"
+  - waitTime: 8
+    line: "Aric, determined to prove his worth, demanded that Elara give him the
+      artifact. \r"
+  - waitTime: 9
+    line: "Elara refused, and a fierce battle ensued. Aric, with his bravery and
+      strength, was able to defeat Elara and claim the artifact for himself.\r"
+  - waitTime: 10
+    line: "But with the artifact in his possession, Aric soon discovered that his
+      greed for power had blinded him. \r"
+  - waitTime: 11
+    line: "He began to use the artifact recklessly, granting himself wealth, fame,
+      and the love of his people. But as time passed, Aric's kingdom fell into chaos
+      and ruin. \r"
+  - waitTime: 12
+    line: "The people, once happy and content, were now suffering under his rule.\r"
+  - waitTime: 13
+    line: "Realizing the error of his ways, Aric sought out Elara once more, begging
+      for her forgiveness and guidance. \r"
+  - waitTime: 14
+    line: "Elara, moved by his remorse, helped Aric to use the artifact wisely and
+      to rule justly. \r"
+  - waitTime: 15
+    line: "Under Aric's new leadership, the kingdom prospered once more, and the
+      people were happy and content.\r"
+  - waitTime: 16
+    line: "From that day forward, Aric was known not only as a powerful ruler, but
+      also as a wise and fair king. \r"
+  - waitTime: 17
+    line: And he lived the rest of his days in peace and happiness, always remembering
+      the lesson that the artifact and Elara had taught him.
