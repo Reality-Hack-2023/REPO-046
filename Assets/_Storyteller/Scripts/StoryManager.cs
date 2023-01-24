@@ -23,7 +23,7 @@ public class StoryManager : MonoBehaviour
             string[] lines = storyFile.text.Split('\n');
             for (int i = 1; i < lines.Length; i++) 
             {
-            timedLineData.Add(new TimedLines(i, lines[i]));
+                timedLineData.Add(new TimedLines(lines[i]));
             }
             StartStory();
         }
@@ -42,24 +42,35 @@ public class StoryManager : MonoBehaviour
     void StartStory() 
     {
         Debug.Log("StartStory");
+        StartCoroutine(StartStoryCoroutine());
+    }
+
+    IEnumerator StartStoryCoroutine()
+    {
         foreach (TimedLines line in timedLineData) 
         {
-            StartCoroutine(StartStoryObject(line));
+            yield return StartCoroutine(StartStoryObject(line));
         }
     }
+
     IEnumerator StartStoryObject(TimedLines timedLine)
     {
-        yield return new WaitForSeconds(timedLine.waitTime);
         generationController.SubmitText(timedLine.line);
         storyLine.text = timedLine.line;
+        yield return new WaitForSeconds(timedLine.waitTime);
     }
 
 }
 [System.Serializable]
 public class TimedLines 
 {
-    public float waitTime = 5;
+    public float waitTime = 3;
     public string line = "";
+
+    public TimedLines(string _line)
+    {
+        line = _line;
+    }
 
     public TimedLines (float _waitTime, string _line) 
     {
